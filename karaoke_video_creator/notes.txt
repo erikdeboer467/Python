@@ -1,0 +1,15 @@
+init project:
+
+requirement:
+    install https://www.imagemagick.org/script/index.php
+    imagemagic config:
+        Add the magick.exe path to IMAGEMAGICK_BINARY in config_defaults.py.
+        By default it should look like this
+        IMAGEMAGICK_BINARY = os.getenv('IMAGEMAGICK_BINARY', 'auto-detect')
+        After
+        IMAGEMAGICK_BINARY = os.getenv('IMAGEMAGICK_BINARY', 'C:\\Program Files\\ImageMagick-7.1.1-Q16-HDRI\\magick.exe')
+
+installed stuff:
+    pipenv install moviepy
+    pipenv install "Pillow<10.0.0"
+
